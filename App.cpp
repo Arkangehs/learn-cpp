@@ -24,6 +24,11 @@
 	cin >> input;
 	client.SetFirstName(input);
 	ui.DisplayClientFullName(client);
+
+
+	cout << "coucou";
+	string tmp;
+	cin >> tmp;
 	return 0;
 	 
 }
