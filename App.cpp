@@ -1,4 +1,6 @@
- #include <iostream>
+ #include <iostream> 
+ #include <list>
+ #include <iterator>
  #include "Client.h"
  #include "UI.h"
  #include "Product.h"
@@ -26,10 +28,35 @@
 	client.SetFirstName(input);
 	ui.DisplayClientFullName(client);
 
+	list<class Product> catalog;
+	catalog.push_front(ballon);
+	catalog.push_front(maillot);
+	catalog.push_front(bas);
+	catalog.push_front(casquette);
+	catalog.push_front(echarpe);
+	 
+	std::list<class Product>::iterator it;
+	 for(it = catalog.begin(); it != catalog.end(); it++)
+	 {
+		string productName = it->m_productName;
+		double price = it->m_price;
+		int idProduct = it->m_idProduct;
+		string description = it->m_description;
 
-	cout << "coucou";
-	string tmp;
-	cin >> tmp;
+		cout << productName << endl;
+		cout << price << endl;
+		cout << idProduct << endl;
+		cout << description << endl;
+		 
+	 }
+	// create catalog
+	// load
+	// boucle principale
+	// Display catalog : fonction dans UI qui prend le catalog et qui affiche
+		// - productId -> ajout a la commande
+		// - pay -> calcul le total et affiche
+		// autre -> affiche message erreur
+
 	return 0;
 	 
 }

@@ -8,3 +8,7 @@ m_productName(productName), m_description(description), m_idProduct(idProduct), 
 {
 
 }
+
+string Product::GetProductName() {
+    return this->m_productName;
+}
