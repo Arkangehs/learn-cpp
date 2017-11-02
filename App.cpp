@@ -11,7 +11,7 @@
 
  int main()
  {
-	Product ballon("Ballon de Foot", "Ballon de foot aux couleurs du PSG", 501725, 24.99);
+	Produc ballon("Ballon de Foot", "Ballon de foot aux couleurs du PSG", 501725, 24.99);
 	Product maillot("Maillot de foot", "Maillot de foot aux couleurs du PSG", 501726, 79.99);
 	Product bas("Short de foot", "Short de foot aux couleurs du PSG", 501727, 49.99);
 	Product casquette("Casquette PSG", "Casquette aux couleurs du PSG", 501728, 19.99);
